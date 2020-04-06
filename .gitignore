@@ -1,5 +1,2 @@
 node_modules/
-prublic/bundle.js
-prublic/bundle.js.map
-prublic/styles.css
-prublic/styles.css.map
+prublic/dist/
