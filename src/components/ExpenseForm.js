@@ -4,8 +4,6 @@ import moment from 'moment';
 import { SingleDatePicker } from 'react-dates';
 import 'react-dates/lib/css/_datepicker.css';
 
-const now = moment();
-
 class ExpenseForm extends Component {
     constructor(props) {
         super(props);
@@ -19,13 +17,17 @@ class ExpenseForm extends Component {
             button: props.expense ? 'Edit' : 'Add'
         };
     }
-    
     onDescriptionChange = (e) => {
         const description = e.target.value;
         this.setState(() => ({ description }));
     };
+    onNoteChange = (e) => {
+        const note = e.target.value;
+        this.setState(() => ({ note }));
+    };
     onAmountChange = (e) => {
         const amount = e.target.value;
+
         if (!amount || amount.match(/^\d{1,}(\.\d{0,2})?$/)) {
             this.setState(() => ({ amount }));
         }
@@ -36,30 +38,27 @@ class ExpenseForm extends Component {
         }
     };
     onFocusChange = ({ focused }) => {
-        this.setState(() => ({ calenderFocused: focused }));
-    }
-    onTextareaChange = (e) => {
-        const note = e.target.value;
-        this.setState(() => ({ note }));
+        this.setState(() => ({ calendarFocused: focused }));
     };
     onSubmit = (e) => {
         e.preventDefault();
+
         if (!this.state.description || !this.state.amount) {
-            this.setState(() => ({ error: 'Please provide description and amount!'}));
+            this.setState(() => ({ error: 'Please provide description and amount.' }));
         } else {
             this.setState(() => ({ error: '' }));
             this.props.onSubmit({
                 description: this.state.description,
                 amount: parseFloat(this.state.amount, 10) * 100,
-                note: this.state.note,
-                createdAt: this.state.createdAt.valueOf()
+                createdAt: this.state.createdAt.valueOf(),
+                note: this.state.note
             });
         }
     };
     render() {
         return (
             <div>
-                {this.state.error && <h3>{this.state.error}</h3>}
+                {this.state.error && <p>{this.state.error}</p>}
                 <form onSubmit={this.onSubmit}>
                     <input
                         type="text"
@@ -77,7 +76,7 @@ class ExpenseForm extends Component {
                     <SingleDatePicker
                         date={this.state.createdAt}
                         onDateChange={this.onDateChange}
-                        focused={this.state.calenderFocused}
+                        focused={this.state.calendarFocused}
                         onFocusChange={this.onFocusChange}
                         numberOfMonths={1}
                         isOutsideRange={() => false}
@@ -85,7 +84,7 @@ class ExpenseForm extends Component {
                     <textarea
                         placeholder="Add a note for your expense (optional)"
                         value={this.state.note}
-                        onChange={this.onTextareaChange}
+                        onChange={this.onNoteChange}
                     >
                     </textarea>
                     <button>{this.state.button} Expense</button>
@@ -94,5 +93,4 @@ class ExpenseForm extends Component {
         )
     }
 }
-
 export default ExpenseForm;
