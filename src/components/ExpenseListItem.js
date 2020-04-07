@@ -5,7 +5,7 @@ import numeral from 'numeral';
 // import { connect } from 'react-redux';
 // import { removeExpense } from '../actions/expenses';
 
-const ExpenseListItem = ({ dispatch, id, description, amount, createdAt }) => (
+const ExpenseListItem = ({ id, description, amount, createdAt }) => (
     <div>
         <Link to={`/edit/${id}`}>
             <h3>{description}</h3>
