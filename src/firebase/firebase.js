@@ -81,6 +81,10 @@ export { firebase, database as default };
 // });
 
 
+// database.ref('expenses/-M4ZYVSs1UaCN0ggavXr').update({
+//     amount: 0
+// });
+
 // database.ref('notes/-M4Y8RsT5YmJA9wB9y7j').remove();
 
 // database.ref().on('value', data => {
