@@ -81,8 +81,6 @@ export { firebase, database as default };
 // });
 
 
-
-
 // database.ref('notes/-M4Y8RsT5YmJA9wB9y7j').remove();
 
 // database.ref().on('value', data => {
