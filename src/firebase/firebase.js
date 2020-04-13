@@ -4,7 +4,7 @@ import 'firebase/storage';     // for storage
 import 'firebase/database'; 
 
 const firebaseConfig = {
-    apiKey: process.env.FIREASE_API_KEY,
+    apiKey: process.env.FIREBASE_API_KEY,
     authDomain: process.env.FIREBASE_AUTH_DOMAIN,
     databaseURL: process.env.FIREBASE_DATABASE_URL,
     projectId: process.env.FIREBASE_PROJECT_ID,
@@ -17,8 +17,9 @@ const firebaseConfig = {
 firebase.initializeApp(firebaseConfig);
 
 const database = firebase.database();
+const googleAuthProvider = new firebase.auth.GoogleAuthProvider();
 
-export { firebase, database as default };
+export { firebase, googleAuthProvider, database as default };
 
 /* subscribe */
 // database.ref().on('value', snapshot => {
