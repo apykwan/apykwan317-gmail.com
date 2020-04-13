@@ -1,0 +1,101 @@
+[33mcommit 580115d31c94b031679cf6055d91de6902896b65[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin2/master[m[33m)[m
+Author: apkwan <apkwan317@gmail.com>
+Date:   Mon Apr 13 04:55:23 2020 -0700
+
+    Store user data in user area
+
+[33mcommit 0e3f7f64434161845e62d082092354eff6adf225[m
+Author: apkwan <apkwan317@gmail.com>
+Date:   Mon Apr 13 01:32:23 2020 -0700
+
+    Add PrivatRoute
+
+[33mcommit fbca509844f48d5ff0374162953eb95b5eef1849[m[33m ([m[1;31mheroku/master[m[33m)[m
+Author: apkwan <apkwan317@gmail.com>
+Date:   Sat Apr 11 09:41:44 2020 -0700
+
+    Add startEditExpense
+
+[33mcommit 380dfc631fc92b9def9c630e72805c7218d94f81[m
+Author: apkwan <apkwan317@gmail.com>
+Date:   Sat Apr 11 08:39:19 2020 -0700
+
+    Setup startRemoveExpenses
+
+[33mcommit 959a1408cef7ae2e8cf3c2e905d30064f87d78d2[m
+Author: apkwan <apkwan317@gmail.com>
+Date:   Sat Apr 11 07:17:47 2020 -0700
+
+    startSetExpenses; allow app to fetch data from firebase
+
+[33mcommit cf09d212d6d30a211e9879bc864ca98b8077150a[m
+Author: apkwan <apkwan317@gmail.com>
+Date:   Fri Apr 10 08:03:09 2020 -0700
+
+    Setup test database env
+
+[33mcommit 815eeb6a240bed2b49734d76a2e0b8685e396885[m
+Author: apkwan <apkwan317@gmail.com>
+Date:   Tue Apr 7 10:19:38 2020 -0700
+
+    Add expense summary to dashboard
+
+[33mcommit 8b96b775e918ba5f5e4b8860327d0bf9519ca69c[m
+Author: apkwan <apkwan317@gmail.com>
+Date:   Tue Apr 7 04:51:24 2020 -0700
+
+    Setup formatting for amount and createdAt
+
+[33mcommit 7ac2cb9f1b75df88432066610b03467ccceeb021[m
+Author: apkwan <apkwan317@gmail.com>
+Date:   Mon Apr 6 07:57:21 2020 -0700
+
+    another update
+
+[33mcommit 157ff41fb27eae7179285640604be8f6fe993ec1[m
+Author: apkwan <apkwan317@gmail.com>
+Date:   Mon Apr 6 07:43:34 2020 -0700
+
+    Update again
+
+[33mcommit 1eed4e4538901e7a42f0b23d305e6204fe5ce933[m
+Author: apkwan <apkwan317@gmail.com>
+Date:   Mon Apr 6 06:22:10 2020 -0700
+
+    Add Heroku-postbuild
+
+[33mcommit efc4019dacc80ae4865e9bad2a6aaaadfaa8208f[m
+Author: apkwan <apkwan317@gmail.com>
+Date:   Mon Apr 6 06:02:02 2020 -0700
+
+    Little Fix
+
+[33mcommit f41d89b59025cb48ac3b52eff4cc25916a36e91a[m
+Author: apkwan <apkwan317@gmail.com>
+Date:   Mon Apr 6 05:36:59 2020 -0700
+
+    Setup devDependencies and dist folders
+
+[33mcommit 0ff6cd8fa53cb71db7fc90c45f696d05b5f6cb16[m
+Author: apkwan <apkwan317@gmail.com>
+Date:   Sun Apr 5 07:56:14 2020 -0700
+
+    setup production build and server
+
+[33mcommit 6b075d1cefe1ef246fed2f02c40926736411552e[m
+Author: apkwan <apkwan317@gmail.com>
+Date:   Sun Apr 5 03:08:26 2020 -0700
+
+    Setup Production webpack Build
+
+[33mcommit af464618ffb9fa60cfa5a4e24b00096804b2be01[m[33m ([m[1;31morigin/master[m[33m)[m
+Author: apkwan <apkwan317@gmail.com>
+Date:   Fri Apr 3 00:56:40 2020 -0700
+
+    Remove dummy expense data
+
+[33mcommit 7f9c52136da69e11466fc50d87f646eb49d53f24[m
+Author: apkwan <apkwan317@gmail.com>
+Date:   Fri Apr 3 00:49:34 2020 -0700
+
+    Initial commit
